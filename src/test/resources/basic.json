@@ -1,0 +1,24 @@
+{
+  "name": "basic-package",
+  "version": "1.0.0",
+  "description": "Basic test module",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sugarmanz/package-json.git"
+  },
+  "keywords": [
+    "test",
+    "kotlin",
+    "mpp"
+  ],
+  "author": "Jeremiah Zucker <zucker.jeremiah@gmail.com> (http://jeremiahzucker.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sugarmanz/package-json/issues"
+  },
+  "homepage": "https://github.com/sugarmanz/package-json#readme"
+}

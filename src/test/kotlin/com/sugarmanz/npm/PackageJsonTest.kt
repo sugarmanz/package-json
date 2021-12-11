@@ -1,43 +1,33 @@
 package com.sugarmanz.npm
 
+import kotlinx.serialization.decodeFromString
+import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.JsonElement
+import kotlinx.serialization.json.encodeToJsonElement
 import kotlin.test.Test
 import kotlin.test.assertEquals
-import kotlin.test.assertFails
 
-internal class PackageTest {
+internal class PackageJsonTest {
 
-    @Test fun `name should contain at least one character`() {
-        assertFails(Name.ValidationMessages.NameEmpty) {
-            Name("").validate()
-        }
+    val basicPackageJsonString = this::class.java.classLoader.getResource("basic.json")!!.readText()
+    val Json = Json {
+        ignoreUnknownKeys = true
     }
 
-    @Test fun `name shouldn't have allow more than 214 characters`() {
-        assertFails(Name.ValidationMessages.NameTooLong) {
-            Name((0..300).fold("") { acc, _ -> acc + "a" }).validate()
-        }
-    }
+    @Test fun `basic package json can be deserialized`() {
+        val basicPackageJson: PackageJson = Json.decodeFromString(basicPackageJsonString)
+        assertEquals(Name("basic-package"), basicPackageJson.name)
+        assertEquals(Semver("1.0.0"), basicPackageJson.version)
+        assertEquals("Basic test module", basicPackageJson.description)
+        assertEquals("main.js", basicPackageJson.main)
+        assertEquals(mapOf("test" to "test"), basicPackageJson.scripts)
+        assertEquals(Repository("git+https://github.com/sugarmanz/package-json.git", "git"), basicPackageJson.repository)
+        assertEquals(listOf("test", "kotlin", "mpp"), basicPackageJson.keywords)
+        assertEquals(People("Jeremiah Zucker", "zucker.jeremiah@gmail.com", "http://jeremiahzucker.com"), basicPackageJson.author)
+        assertEquals("ISC", basicPackageJson.license)
+        assertEquals(Bugs("https://github.com/sugarmanz/package-json/issues"), basicPackageJson.bugs)
+        assertEquals("https://github.com/sugarmanz/package-json#readme", basicPackageJson.homepage)
 
-    @Test fun `scope should start with an @ symbol`() {
-        assertFails(Name.ValidationMessages.ScopePrefix) {
-            Name("scope/package").validate()
-        }
+        assertEquals(Json.decodeFromString(basicPackageJsonString), Json.encodeToJsonElement(basicPackageJson))
     }
-
-    @Test fun `valid name with scope doesn't trigger validation`() {
-        val raw = "@scope/package"
-        val (scope, `package`) = raw.split("/")
-        val name = Name(raw)
-        name.validate()
-        assertEquals(`package`, name.`package`)
-        assertEquals(scope, name.scope)
-    }
-
-    @Test fun `valid name without scope doesn't trigger validation`() {
-        val raw = "package"
-        val name = Name(raw)
-        name.validate()
-        assertEquals(raw, name.`package`)
-    }
-
 }
