@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    [
+      "gradle",
+      {
+        "gradleCommand": "./gradlew",
+        "gradleOptions": [
+          "-Pgradle.publish.key=$GRADLE_PLUGIN_KEY",
+          "-Pgradle.publish.secret=$GRADLE_PLUGIN_SECRET"
+        ]
+      }
+    ],
+    "released",
+    "first-time-contributor",
+    "all-contributors"
+  ],
+  "owner": "sugarmanz",
+  "repo": "package-json",
+  "name": "Jeremiah Zucker",
+  "email": "zucker.jeremiah@gmail.com"
+}
