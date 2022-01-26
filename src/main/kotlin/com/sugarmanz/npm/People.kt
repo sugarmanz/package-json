@@ -15,7 +15,7 @@ data class People(
     // This shows off the json transformation approach, which i currently hate
     internal object MultiFormatSerializer : JsonTransformingSerializer<People>(serializer()) {
         // fair notice.. i was a little past the balmers curve when i wrote this
-        private val regex = """([^<>()]*) ?(?:<([^<>()]*+)>)? ?(?:\(([^<>()]*+)\))?""".toRegex()
+        private val regex = """([^<>()]*)\b ?(?:<([^<>()]*+)>)? ?(?:\(([^<>()]*+)\))?""".toRegex()
 
         override fun transformDeserialize(element: JsonElement) = if (element is JsonPrimitive) buildJsonObject {
             val name = element.content
