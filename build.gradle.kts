@@ -72,7 +72,6 @@ class AuthDelegate private constructor(private val delegate: Project, private va
         val Project.auth get() = AuthDelegate(this)
         fun Project.auth(name: String? = null, transform: (String?) -> String? = { it }) = AuthDelegate(this, name, transform)
     }
-
 }
 
 publishing {
