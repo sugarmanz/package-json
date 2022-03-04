@@ -110,7 +110,7 @@ publishing {
 
 configure<SigningExtension> {
     val signingKey by auth {
-        it?.replace("\\n", "\n")
+//        it?.replace("\\n", "\n")
     }
     val signingPassword by auth
     useInMemoryPgpKeys(signingKey, signingPassword)
