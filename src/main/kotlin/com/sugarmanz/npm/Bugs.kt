@@ -15,6 +15,12 @@ sealed class Bugs {
     @Serializable(Simple.Serializer::class)
     data class Simple(val url: String?) : Bugs() {
 
+        override fun equals(other: Any?): Boolean = when (other) {
+            is Simple -> this.url == other.url
+            is Boxed -> boxed == other
+            else -> super.equals(other)
+        }
+
         object Serializer : KSerializer<Bugs.Simple> {
 
             override val descriptor: SerialDescriptor = String.serializer().descriptor.nullable
@@ -37,6 +43,7 @@ sealed class Bugs {
 
         override fun equals(other: Any?): Boolean = when (other) {
             is Simple -> equals(other.boxed)
+            is Boxed -> this.url == other.url && this.email == other.email
             else -> super.equals(other)
         }
     }
