@@ -1,4 +1,5 @@
 import Build_gradle.AuthDelegate.Companion.auth
+import net.researchgate.release.GitAdapter.GitConfig
 
 repositories {
     mavenCentral()
@@ -18,6 +19,9 @@ plugins {
     `maven-publish`
     signing
     // plugin("org.jetbrains.dokka")
+
+    id("net.researchgate.release") version "2.6.0"
+    id("io.github.gradle-nexus.publish-plugin") version "1.0.0"
 }
 
 dependencies {
@@ -42,6 +46,20 @@ tasks {
 //        archiveClassifier.set("javadoc")
 //        from("$buildDir/dokka/javadoc")
 //    }
+
+    // TODO: Look into how nexus publishing plugin doesn't fail when publish is already defined
+    val publish by creating {
+        group = "publishing"
+        val isSnapshot = version.let { it as String }.contains("-SNAPSHOT")
+        if (!isSnapshot)
+            finalizedBy("closeAndReleaseSonatypeStagingRepository")
+    }
+
+    val version by creating {
+        doLast {
+            println(version)
+        }
+    }
 }
 
 // TODO: Should probably pull from a common publishing helpers module
@@ -64,7 +82,6 @@ publishing {
             // artifact(tasks["javadocJar"])
 
             pom {
-                name.set(name)
                 description.set("Simple Kotlin MPP module declaring NPMs package.json")
                 url.set("https://github.com/sugarmanz/package-json")
 
@@ -99,4 +116,19 @@ configure<SigningExtension> {
     val signingPassword by auth
     useInMemoryPgpKeys(signingKey, signingPassword)
     sign(extensions.findByType(PublishingExtension::class.java)!!.publications)
+}
+
+release {
+    failOnPublishNeeded = false
+    failOnSnapshotDependencies = false
+
+    getProperty("git").let { it as GitConfig }.apply {
+        requireBranch = ""
+    }
+}
+
+nexusPublishing {
+    repositories {
+        sonatype()
+    }
 }
