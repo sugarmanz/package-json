@@ -48,7 +48,7 @@ tasks {
 //    }
 
     // TODO: Look into how nexus publishing plugin doesn't fail when publish is already defined
-    val publish by creating {
+    val publish by getting {
         group = "publishing"
         val isSnapshot = version.let { it as String }.contains("-SNAPSHOT")
         if (!isSnapshot)
