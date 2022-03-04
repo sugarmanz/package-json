@@ -1,0 +1,828 @@
+public abstract class com/sugarmanz/npm/Bin {
+	public static final field Companion Lcom/sugarmanz/npm/Bin$Companion;
+	public synthetic fun <init> (ILkotlinx/serialization/internal/SerializationConstructorMarker;)V
+	public static final fun write$Self (Lcom/sugarmanz/npm/Bin;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+}
+
+public final class com/sugarmanz/npm/Bin$Collection : com/sugarmanz/npm/Bin {
+	public static final field Companion Lcom/sugarmanz/npm/Bin$Collection$Companion;
+	public synthetic fun <init> (ILjava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
+	public fun <init> (Ljava/util/List;)V
+	public final fun component1 ()Ljava/util/List;
+	public final fun copy (Ljava/util/List;)Lcom/sugarmanz/npm/Bin$Collection;
+	public static synthetic fun copy$default (Lcom/sugarmanz/npm/Bin$Collection;Ljava/util/List;ILjava/lang/Object;)Lcom/sugarmanz/npm/Bin$Collection;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getBins ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public static final fun write$Self (Lcom/sugarmanz/npm/Bin$Collection;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+}
+
+public final class com/sugarmanz/npm/Bin$Collection$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/Bin$Collection$$serializer;
+	public static final synthetic field descriptor Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/sugarmanz/npm/Bin$Collection;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/sugarmanz/npm/Bin$Collection;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Bin$Collection$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Bin$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Bin$Single : com/sugarmanz/npm/Bin {
+	public static final field Companion Lcom/sugarmanz/npm/Bin$Single$Companion;
+	public synthetic fun <init> (ILjava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lcom/sugarmanz/npm/Bin$Single;
+	public static synthetic fun copy$default (Lcom/sugarmanz/npm/Bin$Single;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/sugarmanz/npm/Bin$Single;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getExecutable ()Ljava/lang/String;
+	public final fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public static final fun write$Self (Lcom/sugarmanz/npm/Bin$Single;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+}
+
+public final class com/sugarmanz/npm/Bin$Single$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/Bin$Single$$serializer;
+	public static final synthetic field descriptor Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/sugarmanz/npm/Bin$Single;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/sugarmanz/npm/Bin$Single;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Bin$Single$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract class com/sugarmanz/npm/Bugs {
+	public static final field Companion Lcom/sugarmanz/npm/Bugs$Companion;
+}
+
+public final class com/sugarmanz/npm/Bugs$Boxed : com/sugarmanz/npm/Bugs {
+	public static final field Companion Lcom/sugarmanz/npm/Bugs$Boxed$Companion;
+	public fun <init> ()V
+	public synthetic fun <init> (ILjava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lcom/sugarmanz/npm/Bugs$Boxed;
+	public static synthetic fun copy$default (Lcom/sugarmanz/npm/Bugs$Boxed;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/sugarmanz/npm/Bugs$Boxed;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getEmail ()Ljava/lang/String;
+	public final fun getUrl ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public static final fun write$Self (Lcom/sugarmanz/npm/Bugs$Boxed;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+}
+
+public final class com/sugarmanz/npm/Bugs$Boxed$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/Bugs$Boxed$$serializer;
+	public static final synthetic field descriptor Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/sugarmanz/npm/Bugs$Boxed;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/sugarmanz/npm/Bugs$Boxed;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Bugs$Boxed$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Bugs$Companion {
+	public final fun invoke (Ljava/lang/String;Ljava/lang/String;)Lcom/sugarmanz/npm/Bugs;
+	public static synthetic fun invoke$default (Lcom/sugarmanz/npm/Bugs$Companion;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/sugarmanz/npm/Bugs;
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Bugs$Serializer : kotlinx/serialization/KSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/Bugs$Serializer;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/sugarmanz/npm/Bugs;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/sugarmanz/npm/Bugs;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+}
+
+public final class com/sugarmanz/npm/Bugs$Simple : com/sugarmanz/npm/Bugs {
+	public static final field Companion Lcom/sugarmanz/npm/Bugs$Simple$Companion;
+	public fun <init> (Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;)Lcom/sugarmanz/npm/Bugs$Simple;
+	public static synthetic fun copy$default (Lcom/sugarmanz/npm/Bugs$Simple;Ljava/lang/String;ILjava/lang/Object;)Lcom/sugarmanz/npm/Bugs$Simple;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getUrl ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/sugarmanz/npm/Bugs$Simple$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Bugs$Simple$Serializer : kotlinx/serialization/KSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/Bugs$Simple$Serializer;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/sugarmanz/npm/Bugs$Simple;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/sugarmanz/npm/Bugs$Simple;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+}
+
+public final class com/sugarmanz/npm/BugsKt {
+	public static final fun withEmail (Lcom/sugarmanz/npm/Bugs;Ljava/lang/String;)Lcom/sugarmanz/npm/Bugs$Boxed;
+	public static final fun withUrl (Lcom/sugarmanz/npm/Bugs;Ljava/lang/String;)Lcom/sugarmanz/npm/Bugs;
+}
+
+public final class com/sugarmanz/npm/CPUs : com/sugarmanz/npm/HostSpecification {
+	public static final field Companion Lcom/sugarmanz/npm/CPUs$Companion;
+	public static final synthetic fun box-impl (Ljava/util/List;)Lcom/sugarmanz/npm/CPUs;
+	public static fun constructor-impl (Ljava/util/List;)Ljava/util/List;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/util/List;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/util/List;Ljava/util/List;)Z
+	public fun getValue ()Ljava/util/List;
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/util/List;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/util/List;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/util/List;
+}
+
+public final class com/sugarmanz/npm/CPUs$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/CPUs$$serializer;
+	public static final synthetic field descriptor Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun deserialize-feu4AQA (Lkotlinx/serialization/encoding/Decoder;)Ljava/util/List;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun serialize-yTCPDTk (Lkotlinx/serialization/encoding/Encoder;Ljava/util/List;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/CPUs$Companion {
+	public final fun getEmpty-jCar9FM ()Ljava/util/List;
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Dependencies {
+	public static final field Companion Lcom/sugarmanz/npm/Dependencies$Companion;
+	public static final synthetic fun box-impl (Ljava/util/List;)Lcom/sugarmanz/npm/Dependencies;
+	public static fun constructor-impl (Ljava/util/List;)Ljava/util/List;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/util/List;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/util/List;Ljava/util/List;)Z
+	public final fun getDependencies ()Ljava/util/List;
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/util/List;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/util/List;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/util/List;
+}
+
+public final class com/sugarmanz/npm/Dependencies$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/Dependencies$$serializer;
+	public static final synthetic field descriptor Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun deserialize--LHRem8 (Lkotlinx/serialization/encoding/Decoder;)Ljava/util/List;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun serialize-tHHutZw (Lkotlinx/serialization/encoding/Encoder;Ljava/util/List;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Dependencies$Companion {
+	public final fun getEmpty-BzrkBSg ()Ljava/util/List;
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Dependency {
+	public static final field Companion Lcom/sugarmanz/npm/Dependency$Companion;
+	public synthetic fun <init> (ILjava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1-YM4NObw ()Ljava/lang/String;
+	public final fun component2-Q37xXzg ()Ljava/lang/String;
+	public final fun copy-HZ-b9mM (Ljava/lang/String;Ljava/lang/String;)Lcom/sugarmanz/npm/Dependency;
+	public static synthetic fun copy-HZ-b9mM$default (Lcom/sugarmanz/npm/Dependency;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/sugarmanz/npm/Dependency;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getName-YM4NObw ()Ljava/lang/String;
+	public final fun getVersion-Q37xXzg ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public static final fun write$Self (Lcom/sugarmanz/npm/Dependency;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+}
+
+public final class com/sugarmanz/npm/Dependency$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/Dependency$$serializer;
+	public static final synthetic field descriptor Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/sugarmanz/npm/Dependency;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/sugarmanz/npm/Dependency;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Dependency$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Directories {
+	public static final field Companion Lcom/sugarmanz/npm/Directories$Companion;
+	public fun <init> ()V
+	public synthetic fun <init> (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/sugarmanz/npm/Directories;
+	public static synthetic fun copy$default (Lcom/sugarmanz/npm/Directories;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/sugarmanz/npm/Directories;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getBin ()Ljava/lang/String;
+	public final fun getDoc ()Ljava/lang/String;
+	public final fun getLib ()Ljava/lang/String;
+	public final fun getMan ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public static final fun write$Self (Lcom/sugarmanz/npm/Directories;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+}
+
+public final class com/sugarmanz/npm/Directories$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/Directories$$serializer;
+	public static final synthetic field descriptor Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/sugarmanz/npm/Directories;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/sugarmanz/npm/Directories;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Directories$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Engines {
+	public static final field Companion Lcom/sugarmanz/npm/Engines$Companion;
+	public static final synthetic fun box-impl (Ljava/util/Map;)Lcom/sugarmanz/npm/Engines;
+	public static fun constructor-impl (Ljava/util/Map;)Ljava/util/Map;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/util/Map;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/util/Map;Ljava/util/Map;)Z
+	public static final fun get-kZ2J2DQ (Ljava/util/Map;Ljava/lang/String;)Ljava/lang/String;
+	public static final fun getNode-cgkxJEU (Ljava/util/Map;)Ljava/lang/String;
+	public static final fun getNpm-cgkxJEU (Ljava/util/Map;)Ljava/lang/String;
+	public final fun getValue ()Ljava/util/Map;
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/util/Map;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/util/Map;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/util/Map;
+}
+
+public final class com/sugarmanz/npm/Engines$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/Engines$$serializer;
+	public static final synthetic field descriptor Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun deserialize-UmPzqAw (Lkotlinx/serialization/encoding/Decoder;)Ljava/util/Map;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun serialize-R7_M9Q8 (Lkotlinx/serialization/encoding/Encoder;Ljava/util/Map;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Engines$Companion {
+	public final fun getEmpty-OZgZ5Q8 ()Ljava/util/Map;
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract class com/sugarmanz/npm/Funding {
+	public static final field Companion Lcom/sugarmanz/npm/Funding$Companion;
+	public synthetic fun <init> (ILkotlinx/serialization/internal/SerializationConstructorMarker;)V
+	public static final fun write$Self (Lcom/sugarmanz/npm/Funding;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+}
+
+public final class com/sugarmanz/npm/Funding$Collection : com/sugarmanz/npm/Funding {
+	public static final field Companion Lcom/sugarmanz/npm/Funding$Collection$Companion;
+	public synthetic fun <init> (ILjava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
+	public fun <init> (Ljava/util/List;)V
+	public final fun component1 ()Ljava/util/List;
+	public final fun copy (Ljava/util/List;)Lcom/sugarmanz/npm/Funding$Collection;
+	public static synthetic fun copy$default (Lcom/sugarmanz/npm/Funding$Collection;Ljava/util/List;ILjava/lang/Object;)Lcom/sugarmanz/npm/Funding$Collection;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getFundings ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public static final fun write$Self (Lcom/sugarmanz/npm/Funding$Collection;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+}
+
+public final class com/sugarmanz/npm/Funding$Collection$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/Funding$Collection$$serializer;
+	public static final synthetic field descriptor Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/sugarmanz/npm/Funding$Collection;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/sugarmanz/npm/Funding$Collection;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Funding$Collection$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Funding$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Funding$Single : com/sugarmanz/npm/Funding {
+	public static final field Companion Lcom/sugarmanz/npm/Funding$Single$Companion;
+	public synthetic fun <init> (ILjava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lcom/sugarmanz/npm/Funding$Single;
+	public static synthetic fun copy$default (Lcom/sugarmanz/npm/Funding$Single;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/sugarmanz/npm/Funding$Single;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getType ()Ljava/lang/String;
+	public final fun getUrl ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public static final fun write$Self (Lcom/sugarmanz/npm/Funding$Single;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+}
+
+public final class com/sugarmanz/npm/Funding$Single$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/Funding$Single$$serializer;
+	public static final synthetic field descriptor Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/sugarmanz/npm/Funding$Single;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/sugarmanz/npm/Funding$Single;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Funding$Single$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class com/sugarmanz/npm/HostSpecification {
+	public abstract fun getValue ()Ljava/util/List;
+}
+
+public final class com/sugarmanz/npm/HostSpecificationKt {
+	public static final fun allowed (Lcom/sugarmanz/npm/HostSpecification;Ljava/lang/String;)Z
+	public static final fun blocked (Lcom/sugarmanz/npm/HostSpecification;Ljava/lang/String;)Z
+	public static final fun getAllowed (Lcom/sugarmanz/npm/HostSpecification;)Ljava/util/List;
+	public static final fun getBlocked (Lcom/sugarmanz/npm/HostSpecification;)Ljava/util/List;
+}
+
+public abstract class com/sugarmanz/npm/License {
+	public static final field Companion Lcom/sugarmanz/npm/License$Companion;
+}
+
+public final class com/sugarmanz/npm/License$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/License$Legacy : com/sugarmanz/npm/License {
+	public static final field Companion Lcom/sugarmanz/npm/License$Legacy$Companion;
+	public synthetic fun <init> (ILjava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;)Lcom/sugarmanz/npm/License$Legacy;
+	public static synthetic fun copy$default (Lcom/sugarmanz/npm/License$Legacy;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/sugarmanz/npm/License$Legacy;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getName ()Ljava/lang/String;
+	public final fun getUrl ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public static final fun write$Self (Lcom/sugarmanz/npm/License$Legacy;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+}
+
+public final class com/sugarmanz/npm/License$Legacy$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/License$Legacy$$serializer;
+	public static final synthetic field descriptor Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/sugarmanz/npm/License$Legacy;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/sugarmanz/npm/License$Legacy;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/License$Legacy$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/License$Serializer : kotlinx/serialization/KSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/License$Serializer;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/sugarmanz/npm/License;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/sugarmanz/npm/License;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+}
+
+public final class com/sugarmanz/npm/License$StringBased : com/sugarmanz/npm/License, com/sugarmanz/npm/Validatable {
+	public static final field Companion Lcom/sugarmanz/npm/License$StringBased$Companion;
+	public fun <init> (Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;)Lcom/sugarmanz/npm/License$StringBased;
+	public static synthetic fun copy$default (Lcom/sugarmanz/npm/License$StringBased;Ljava/lang/String;ILjava/lang/Object;)Lcom/sugarmanz/npm/License$StringBased;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getFilename ()Ljava/lang/String;
+	public final fun getLicense ()Ljava/lang/String;
+	public fun hashCode ()I
+	public final fun isFile ()Z
+	public final fun isPrivate ()Z
+	public fun toString ()Ljava/lang/String;
+	public fun validate ()V
+}
+
+public final class com/sugarmanz/npm/License$StringBased$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/License$StringBased$Serializer : kotlinx/serialization/KSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/License$StringBased$Serializer;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/sugarmanz/npm/License$StringBased;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/sugarmanz/npm/License$StringBased;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+}
+
+public abstract class com/sugarmanz/npm/Man : com/sugarmanz/npm/Validatable {
+	public static final field ManFileMustEndWithNumber Ljava/lang/String;
+	public static final field ValidationMessages Lcom/sugarmanz/npm/Man$ValidationMessages;
+	public synthetic fun <init> (ILkotlinx/serialization/internal/SerializationConstructorMarker;)V
+	public static final fun write$Self (Lcom/sugarmanz/npm/Man;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+}
+
+public final class com/sugarmanz/npm/Man$Collection : com/sugarmanz/npm/Man {
+	public static final field Companion Lcom/sugarmanz/npm/Man$Collection$Companion;
+	public synthetic fun <init> (ILjava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
+	public fun <init> (Ljava/util/List;)V
+	public final fun component1 ()Ljava/util/List;
+	public final fun copy (Ljava/util/List;)Lcom/sugarmanz/npm/Man$Collection;
+	public static synthetic fun copy$default (Lcom/sugarmanz/npm/Man$Collection;Ljava/util/List;ILjava/lang/Object;)Lcom/sugarmanz/npm/Man$Collection;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getMans ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun validate ()V
+	public static final fun write$Self (Lcom/sugarmanz/npm/Man$Collection;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+}
+
+public final class com/sugarmanz/npm/Man$Collection$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/Man$Collection$$serializer;
+	public static final synthetic field descriptor Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/sugarmanz/npm/Man$Collection;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/sugarmanz/npm/Man$Collection;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Man$Collection$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Man$Single : com/sugarmanz/npm/Man {
+	public static final field Companion Lcom/sugarmanz/npm/Man$Single$Companion;
+	public synthetic fun <init> (ILjava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
+	public fun <init> (Ljava/lang/String;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;)Lcom/sugarmanz/npm/Man$Single;
+	public static synthetic fun copy$default (Lcom/sugarmanz/npm/Man$Single;Ljava/lang/String;ILjava/lang/Object;)Lcom/sugarmanz/npm/Man$Single;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getPath ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun validate ()V
+	public static final fun write$Self (Lcom/sugarmanz/npm/Man$Single;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+}
+
+public final class com/sugarmanz/npm/Man$Single$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/Man$Single$$serializer;
+	public static final synthetic field descriptor Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/sugarmanz/npm/Man$Single;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/sugarmanz/npm/Man$Single;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Man$Single$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Man$ValidationMessages {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Name : com/sugarmanz/npm/Validatable {
+	public static final field NameEmpty Ljava/lang/String;
+	public static final field NameTooLong Ljava/lang/String;
+	public static final field ScopePrefix Ljava/lang/String;
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lcom/sugarmanz/npm/Name;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public static final fun getPackage-impl (Ljava/lang/String;)Ljava/lang/String;
+	public static final fun getScope-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+	public fun validate ()V
+	public static fun validate-impl (Ljava/lang/String;)V
+}
+
+public final class com/sugarmanz/npm/Name$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/Name$$serializer;
+	public static final synthetic field descriptor Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun deserialize-1JWHhIc (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/String;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun serialize-ITu7Thk (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/String;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/OperatingSystems : com/sugarmanz/npm/HostSpecification {
+	public static final field Companion Lcom/sugarmanz/npm/OperatingSystems$Companion;
+	public static final synthetic fun box-impl (Ljava/util/List;)Lcom/sugarmanz/npm/OperatingSystems;
+	public static fun constructor-impl (Ljava/util/List;)Ljava/util/List;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/util/List;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/util/List;Ljava/util/List;)Z
+	public fun getValue ()Ljava/util/List;
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/util/List;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/util/List;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/util/List;
+}
+
+public final class com/sugarmanz/npm/OperatingSystems$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/OperatingSystems$$serializer;
+	public static final synthetic field descriptor Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun deserialize-675d8Xg (Lkotlinx/serialization/encoding/Decoder;)Ljava/util/List;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun serialize-Y1e15GM (Lkotlinx/serialization/encoding/Encoder;Ljava/util/List;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/OperatingSystems$Companion {
+	public final fun getEmpty-HM0lN28 ()Ljava/util/List;
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/PackageJson : com/sugarmanz/npm/Validatable {
+	public static final field Companion Lcom/sugarmanz/npm/PackageJson$Companion;
+	public synthetic fun <init> (IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Lcom/sugarmanz/npm/Bugs;Lcom/sugarmanz/npm/License;Ljava/util/List;Lcom/sugarmanz/npm/People;Lcom/sugarmanz/npm/Funding;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/sugarmanz/npm/Bin;Lcom/sugarmanz/npm/Man;Lcom/sugarmanz/npm/Directories;Lcom/sugarmanz/npm/Repository;Ljava/util/Map;Lkotlinx/serialization/json/JsonObject;Ljava/util/List;Ljava/util/List;Ljava/util/List;Lkotlinx/serialization/json/JsonObject;Ljava/util/List;Ljava/util/List;Ljava/util/Map;Ljava/util/List;Ljava/util/List;ZLkotlinx/serialization/json/JsonObject;Ljava/util/List;Ljava/util/List;Ljava/util/List;Lkotlinx/serialization/internal/SerializationConstructorMarker;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Lcom/sugarmanz/npm/Bugs;Lcom/sugarmanz/npm/License;Ljava/util/List;Lcom/sugarmanz/npm/People;Lcom/sugarmanz/npm/Funding;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/sugarmanz/npm/Bin;Lcom/sugarmanz/npm/Man;Lcom/sugarmanz/npm/Directories;Lcom/sugarmanz/npm/Repository;Ljava/util/Map;Lkotlinx/serialization/json/JsonObject;Ljava/util/List;Ljava/util/List;Ljava/util/List;Lkotlinx/serialization/json/JsonObject;Ljava/util/List;Ljava/util/List;Ljava/util/Map;Ljava/util/List;Ljava/util/List;ZLkotlinx/serialization/json/JsonObject;Ljava/util/List;Ljava/util/List;Ljava/util/List;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Lcom/sugarmanz/npm/Bugs;Lcom/sugarmanz/npm/License;Ljava/util/List;Lcom/sugarmanz/npm/People;Lcom/sugarmanz/npm/Funding;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/sugarmanz/npm/Bin;Lcom/sugarmanz/npm/Man;Lcom/sugarmanz/npm/Directories;Lcom/sugarmanz/npm/Repository;Ljava/util/Map;Lkotlinx/serialization/json/JsonObject;Ljava/util/List;Ljava/util/List;Ljava/util/List;Lkotlinx/serialization/json/JsonObject;Ljava/util/List;Ljava/util/List;Ljava/util/Map;Ljava/util/List;Ljava/util/List;ZLkotlinx/serialization/json/JsonObject;Ljava/util/List;Ljava/util/List;Ljava/util/List;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1-GfaF5Cg ()Ljava/lang/String;
+	public final fun component10 ()Lcom/sugarmanz/npm/Funding;
+	public final fun component11 ()Ljava/util/List;
+	public final fun component12 ()Ljava/lang/String;
+	public final fun component13 ()Ljava/lang/String;
+	public final fun component14 ()Lcom/sugarmanz/npm/Bin;
+	public final fun component15 ()Lcom/sugarmanz/npm/Man;
+	public final fun component16 ()Lcom/sugarmanz/npm/Directories;
+	public final fun component17 ()Lcom/sugarmanz/npm/Repository;
+	public final fun component18 ()Ljava/util/Map;
+	public final fun component19 ()Lkotlinx/serialization/json/JsonObject;
+	public final fun component2-cgkxJEU ()Ljava/lang/String;
+	public final fun component20-BzrkBSg ()Ljava/util/List;
+	public final fun component21-BzrkBSg ()Ljava/util/List;
+	public final fun component22-BzrkBSg ()Ljava/util/List;
+	public final fun component23 ()Lkotlinx/serialization/json/JsonObject;
+	public final fun component24 ()Ljava/util/List;
+	public final fun component25-BzrkBSg ()Ljava/util/List;
+	public final fun component26-OZgZ5Q8 ()Ljava/util/Map;
+	public final fun component27-HM0lN28 ()Ljava/util/List;
+	public final fun component28-jCar9FM ()Ljava/util/List;
+	public final fun component29 ()Z
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component30 ()Lkotlinx/serialization/json/JsonObject;
+	public final fun component31 ()Ljava/util/List;
+	public final fun component32 ()Ljava/util/List;
+	public final fun component33 ()Ljava/util/List;
+	public final fun component4 ()Ljava/util/List;
+	public final fun component5 ()Ljava/lang/String;
+	public final fun component6 ()Lcom/sugarmanz/npm/Bugs;
+	public final fun component7 ()Lcom/sugarmanz/npm/License;
+	public final fun component8 ()Ljava/util/List;
+	public final fun component9 ()Lcom/sugarmanz/npm/People;
+	public final fun copy-xt0eUS8 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Lcom/sugarmanz/npm/Bugs;Lcom/sugarmanz/npm/License;Ljava/util/List;Lcom/sugarmanz/npm/People;Lcom/sugarmanz/npm/Funding;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/sugarmanz/npm/Bin;Lcom/sugarmanz/npm/Man;Lcom/sugarmanz/npm/Directories;Lcom/sugarmanz/npm/Repository;Ljava/util/Map;Lkotlinx/serialization/json/JsonObject;Ljava/util/List;Ljava/util/List;Ljava/util/List;Lkotlinx/serialization/json/JsonObject;Ljava/util/List;Ljava/util/List;Ljava/util/Map;Ljava/util/List;Ljava/util/List;ZLkotlinx/serialization/json/JsonObject;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Lcom/sugarmanz/npm/PackageJson;
+	public static synthetic fun copy-xt0eUS8$default (Lcom/sugarmanz/npm/PackageJson;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Lcom/sugarmanz/npm/Bugs;Lcom/sugarmanz/npm/License;Ljava/util/List;Lcom/sugarmanz/npm/People;Lcom/sugarmanz/npm/Funding;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lcom/sugarmanz/npm/Bin;Lcom/sugarmanz/npm/Man;Lcom/sugarmanz/npm/Directories;Lcom/sugarmanz/npm/Repository;Ljava/util/Map;Lkotlinx/serialization/json/JsonObject;Ljava/util/List;Ljava/util/List;Ljava/util/List;Lkotlinx/serialization/json/JsonObject;Ljava/util/List;Ljava/util/List;Ljava/util/Map;Ljava/util/List;Ljava/util/List;ZLkotlinx/serialization/json/JsonObject;Ljava/util/List;Ljava/util/List;Ljava/util/List;IILjava/lang/Object;)Lcom/sugarmanz/npm/PackageJson;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAuthor ()Lcom/sugarmanz/npm/People;
+	public final fun getBin ()Lcom/sugarmanz/npm/Bin;
+	public final fun getBrowser ()Ljava/lang/String;
+	public final fun getBugs ()Lcom/sugarmanz/npm/Bugs;
+	public final fun getBundledDependencies ()Ljava/util/List;
+	public final fun getConfig ()Lkotlinx/serialization/json/JsonObject;
+	public final fun getContributors ()Ljava/util/List;
+	public final fun getCpu-jCar9FM ()Ljava/util/List;
+	public final fun getDependencies-BzrkBSg ()Ljava/util/List;
+	public final fun getDescription ()Ljava/lang/String;
+	public final fun getDevDependencies-BzrkBSg ()Ljava/util/List;
+	public final fun getDirectories ()Lcom/sugarmanz/npm/Directories;
+	public final fun getEngines-OZgZ5Q8 ()Ljava/util/Map;
+	public final fun getFiles ()Ljava/util/List;
+	public final fun getFunding ()Lcom/sugarmanz/npm/Funding;
+	public final fun getHomepage ()Ljava/lang/String;
+	public final fun getKeywords ()Ljava/util/List;
+	public final fun getLicense ()Lcom/sugarmanz/npm/License;
+	public final fun getLicenses ()Ljava/util/List;
+	public final fun getMain ()Ljava/lang/String;
+	public final fun getMaintainers ()Ljava/util/List;
+	public final fun getMan ()Lcom/sugarmanz/npm/Man;
+	public final fun getName-GfaF5Cg ()Ljava/lang/String;
+	public final fun getOptionalDependencies-BzrkBSg ()Ljava/util/List;
+	public final fun getOs-HM0lN28 ()Ljava/util/List;
+	public final fun getPeerDependencies-BzrkBSg ()Ljava/util/List;
+	public final fun getPeerDependenciesMeta ()Lkotlinx/serialization/json/JsonObject;
+	public final fun getPrivate ()Z
+	public final fun getPublishConfig ()Lkotlinx/serialization/json/JsonObject;
+	public final fun getRepository ()Lcom/sugarmanz/npm/Repository;
+	public final fun getScripts ()Ljava/util/Map;
+	public final fun getVersion-cgkxJEU ()Ljava/lang/String;
+	public final fun getWorkspaces ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun validate ()V
+	public static final fun write$Self (Lcom/sugarmanz/npm/PackageJson;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+}
+
+public final class com/sugarmanz/npm/PackageJson$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/PackageJson$$serializer;
+	public static final synthetic field descriptor Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/sugarmanz/npm/PackageJson;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/sugarmanz/npm/PackageJson;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/PackageJson$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/People {
+	public static final field Companion Lcom/sugarmanz/npm/People$Companion;
+	public synthetic fun <init> (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/sugarmanz/npm/People;
+	public static synthetic fun copy$default (Lcom/sugarmanz/npm/People;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/sugarmanz/npm/People;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getEmail ()Ljava/lang/String;
+	public final fun getName ()Ljava/lang/String;
+	public final fun getUrl ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public static final fun write$Self (Lcom/sugarmanz/npm/People;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+}
+
+public final class com/sugarmanz/npm/People$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/People$$serializer;
+	public static final synthetic field descriptor Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/sugarmanz/npm/People;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/sugarmanz/npm/People;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/People$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Repository {
+	public static final field Companion Lcom/sugarmanz/npm/Repository$Companion;
+	public synthetic fun <init> (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/sugarmanz/npm/Repository;
+	public static synthetic fun copy$default (Lcom/sugarmanz/npm/Repository;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/sugarmanz/npm/Repository;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getDirectory ()Ljava/lang/String;
+	public final fun getType ()Ljava/lang/String;
+	public final fun getUrl ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public static final fun write$Self (Lcom/sugarmanz/npm/Repository;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V
+}
+
+public final class com/sugarmanz/npm/Repository$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/Repository$$serializer;
+	public static final synthetic field descriptor Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/sugarmanz/npm/Repository;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/sugarmanz/npm/Repository;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Repository$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Semver : com/sugarmanz/npm/Validatable {
+	public static final field Companion Lcom/sugarmanz/npm/Semver$Companion;
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lcom/sugarmanz/npm/Semver;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public static final fun getMajor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public static final fun getMinor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public static final fun getPatch-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+	public fun validate ()V
+	public static fun validate-impl (Ljava/lang/String;)V
+}
+
+public final class com/sugarmanz/npm/Semver$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/Semver$$serializer;
+	public static final synthetic field descriptor Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun deserialize-mXr-i3k (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/String;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun serialize-sXBCjTU (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/String;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Semver$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class com/sugarmanz/npm/Validatable {
+	public abstract fun validate ()V
+}
+
