@@ -149,6 +149,7 @@ public final class com/sugarmanz/npm/Bugs$Simple$Serializer : kotlinx/serializat
 }
 
 public final class com/sugarmanz/npm/BugsKt {
+	public static final fun getBoxed (Lcom/sugarmanz/npm/Bugs$Simple;)Lcom/sugarmanz/npm/Bugs$Boxed;
 	public static final fun withEmail (Lcom/sugarmanz/npm/Bugs;Ljava/lang/String;)Lcom/sugarmanz/npm/Bugs$Boxed;
 	public static final fun withUrl (Lcom/sugarmanz/npm/Bugs;Ljava/lang/String;)Lcom/sugarmanz/npm/Bugs;
 }
