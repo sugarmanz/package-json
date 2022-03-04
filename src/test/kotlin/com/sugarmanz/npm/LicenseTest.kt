@@ -69,7 +69,8 @@ internal class LicenseTest {
         )
     }
 
-    @Test fun `decode legacy collection licenses`() {
+    // DISABLED: See https://github.com/Kotlin/kotlinx.serialization/issues/1874
+    fun `decode legacy collection licenses`() {
         val licenses: List<License> = Json.decodeFromJsonElement(
             buildJsonArray {
                 add(
@@ -89,8 +90,7 @@ internal class LicenseTest {
         assertEquals("ISC2", license2.license)
     }
 
-    // DISABLED: See https://github.com/Kotlin/kotlinx.serialization/issues/1874
-    fun `encode legacy collection licenses`() {
+    @Test fun `encode legacy collection licenses`() {
         val licenses = listOf(
             License.Legacy("ISC", "https://license.com/isc"),
             License.StringBased("ISC")

@@ -33,7 +33,13 @@ sealed class Bugs {
     data class Boxed(
         val url: String? = null,
         val email: String? = null,
-    ) : Bugs()
+    ) : Bugs() {
+
+        override fun equals(other: Any?): Boolean = when (other) {
+            is Simple -> equals(other.boxed)
+            else -> super.equals(other)
+        }
+    }
 
     object Serializer : KSerializer<Bugs> {
 
@@ -57,6 +63,8 @@ sealed class Bugs {
         } ?: Simple(url)
     }
 }
+
+val Bugs.Simple.boxed: Bugs.Boxed get() = Bugs.Boxed(url)
 
 fun Bugs.withEmail(email: String): Bugs.Boxed = when (this) {
     is Bugs.Simple -> Bugs.Boxed(url, email)
