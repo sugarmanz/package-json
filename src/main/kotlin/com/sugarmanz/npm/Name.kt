@@ -23,11 +23,6 @@ import kotlinx.serialization.Serializable
         maybePackage ?: requireNotNull(maybeScope)
     }
 
-//    override fun equals(other: Any?): Boolean = when (other) {
-//        is String -> value == other
-//        else -> super.equals(other)
-//    }
-
     internal companion object ValidationMessages {
         const val NameEmpty = "Name must not be empty"
         const val ScopePrefix = "Scopes must be preceded by an @ symbol."

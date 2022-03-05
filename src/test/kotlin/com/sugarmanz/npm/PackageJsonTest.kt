@@ -2,7 +2,6 @@ package com.sugarmanz.npm
 
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
-import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.json.encodeToJsonElement
 import kotlin.test.Test
 import kotlin.test.assertEquals
@@ -12,6 +11,7 @@ internal class PackageJsonTest {
     val basicPackageJsonString = this::class.java.classLoader.getResource("basic.json")!!.readText()
     val Json = Json {
         ignoreUnknownKeys = true
+        prettyPrint = true
     }
 
     @Test fun `basic package json can be deserialized`() {
@@ -24,10 +24,17 @@ internal class PackageJsonTest {
         assertEquals(Repository("git+https://github.com/sugarmanz/package-json.git", "git"), basicPackageJson.repository)
         assertEquals(listOf("test", "kotlin", "mpp"), basicPackageJson.keywords)
         assertEquals(People("Jeremiah Zucker", "zucker.jeremiah@gmail.com", "http://jeremiahzucker.com"), basicPackageJson.author)
-        assertEquals("ISC", basicPackageJson.license)
+        assertEquals(License.StringBased("ISC"), basicPackageJson.license)
         assertEquals(Bugs("https://github.com/sugarmanz/package-json/issues"), basicPackageJson.bugs)
         assertEquals("https://github.com/sugarmanz/package-json#readme", basicPackageJson.homepage)
 
         assertEquals(Json.decodeFromString(basicPackageJsonString), Json.encodeToJsonElement(basicPackageJson))
+    }
+
+    @Test fun `basic package json can be serialized`() {
+        val packageJson: PackageJson = Json.decodeFromString(basicPackageJsonString)
+        val encoded = Json.encodeToJsonElement(packageJson)
+        val parsed = Json.parseToJsonElement(basicPackageJsonString)
+        assertEquals(parsed, encoded)
     }
 }

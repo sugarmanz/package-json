@@ -12,8 +12,9 @@ data class PackageJson(
     val description: String? = null,
     val keywords: List<String> = emptyList(),
     val homepage: String? = null,
-    val bugs: Bugs = Bugs.Empty,
-    val license: String? = null,
+    val bugs: Bugs? = null,
+    val license: License? = null,
+    val licenses: List<License>? = null,
     @Serializable(with = People.MultiFormatSerializer::class)
     val author: People? = null,
     val funding: Funding? = null,
@@ -42,6 +43,8 @@ data class PackageJson(
     val workspaces: List<String> = emptyList(),
     val contributors: List<People> = emptyList(),
     val maintainers: List<People> = emptyList(),
+
+    // TODO: Add additional catchall to preserve fields that aren't standard?
 ) : Validatable {
 
     override fun validate() {
