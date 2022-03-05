@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Install Auto
         run: |
-          curl -vkL -o - https://github.com/intuit/auto/releases/download/v10.33.0/auto-linux.gz | gunzip > ~/auto
+          curl -vkL -o - https://github.com/intuit/auto/releases/download/v0.0.0-canary/auto-linux--canary.2160.25661.gz | gunzip > ~/auto
           chmod a+x ~/auto
 
       - name: Checkout
