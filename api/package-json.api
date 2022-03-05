@@ -201,21 +201,18 @@ public final class com/sugarmanz/npm/Dependencies {
 	public final synthetic fun unbox-impl ()Ljava/util/List;
 }
 
-public final class com/sugarmanz/npm/Dependencies$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
-	public static final field INSTANCE Lcom/sugarmanz/npm/Dependencies$$serializer;
-	public static final synthetic field descriptor Lkotlinx/serialization/descriptors/SerialDescriptor;
-	public fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+public final class com/sugarmanz/npm/Dependencies$Companion {
+	public final fun getEmpty-BzrkBSg ()Ljava/util/List;
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/sugarmanz/npm/Dependencies$Serializer : kotlinx/serialization/KSerializer {
+	public static final field INSTANCE Lcom/sugarmanz/npm/Dependencies$Serializer;
 	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
 	public fun deserialize--LHRem8 (Lkotlinx/serialization/encoding/Decoder;)Ljava/util/List;
 	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
 	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
 	public fun serialize-tHHutZw (Lkotlinx/serialization/encoding/Encoder;Ljava/util/List;)V
-	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
-}
-
-public final class com/sugarmanz/npm/Dependencies$Companion {
-	public final fun getEmpty-BzrkBSg ()Ljava/util/List;
-	public final fun serializer ()Lkotlinx/serialization/KSerializer;
 }
 
 public final class com/sugarmanz/npm/Dependency {
