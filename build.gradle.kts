@@ -85,6 +85,7 @@ publishing {
             artifact(tasks["javadocJar"])
 
             pom {
+                name.set("package-json")
                 description.set("Simple Kotlin MPP module declaring NPMs package.json")
                 url.set("https://github.com/sugarmanz/package-json")
                 licenses {
