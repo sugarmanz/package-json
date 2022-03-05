@@ -2,7 +2,6 @@ name: CI
 on: [push]
 jobs:
   build-and-deploy:
-    environment: Build
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
     steps:
