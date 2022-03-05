@@ -18,7 +18,7 @@ plugins {
     // publishing
     `maven-publish`
     signing
-    // plugin("org.jetbrains.dokka")
+    id("org.jetbrains.dokka") version "1.6.0"
 
     id("net.researchgate.release") version "2.6.0"
     id("io.github.gradle-nexus.publish-plugin") version "1.0.0"
@@ -37,15 +37,19 @@ tasks {
 //        explicitApi()
     }
 
+    java {
+        withSourcesJar()
+    }
+
     test {
         useJUnitPlatform()
     }
 
-//    register<Jar>("javadocJar") {
-//        dependsOn("dokkaJavadoc")
-//        archiveClassifier.set("javadoc")
-//        from("$buildDir/dokka/javadoc")
-//    }
+    register<Jar>("javadocJar") {
+        dependsOn("dokkaJavadoc")
+        archiveClassifier.set("javadoc")
+        from("$buildDir/dokka/javadoc")
+    }
 
     // TODO: Look into how nexus publishing plugin doesn't fail when publish is already defined
     val publish by getting {
@@ -78,19 +82,17 @@ publishing {
     publications {
         register<MavenPublication>("jar") {
             from(components.getByName("java"))
-            // artifact(tasks["javadocJar"])
+            artifact(tasks["javadocJar"])
 
             pom {
                 description.set("Simple Kotlin MPP module declaring NPMs package.json")
                 url.set("https://github.com/sugarmanz/package-json")
-
-                // TODO: Figure out license
-//                licenses {
-//                    license {
-//                        name.set("MIT")
-//                        url.set("https://github.com/intuit/hooks/blob/master/LICENSE")
-//                    }
-//                }
+                licenses {
+                    license {
+                        name.set("MIT")
+                        url.set("https://github.com/sugarmanz/package-json/blob/main/LICENSE")
+                    }
+                }
                 developers {
                     developer {
                         id.set("sugarmanz")
