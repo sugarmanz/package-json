@@ -1,3 +1,23 @@
+# v0.0.2 (Sat Mar 05 2022)
+
+### Release Notes
+
+#### source compat version ([#3](https://github.com/sugarmanz/package-json/pull/3))
+
+Add Java source compatibility
+
+---
+
+#### 🐛 Bug Fix
+
+- source compat version [#3](https://github.com/sugarmanz/package-json/pull/3) ([@sugarmanz](https://github.com/sugarmanz))
+
+#### Authors: 1
+
+- Jeremiah Zucker ([@sugarmanz](https://github.com/sugarmanz))
+
+---
+
 # v0.0.1 (Sat Mar 05 2022)
 
 :tada: This release contains work from a new contributor! :tada:
