@@ -1,4 +1,4 @@
-# v0.0.2 (Sat Mar 05 2022)
+# v0.0.1 (Sat Mar 05 2022)
 
 :tada: This release contains work from a new contributor! :tada:
 
