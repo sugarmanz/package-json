@@ -1,3 +1,15 @@
+# v0.0.3 (Wed Jun 04 2025)
+
+#### 🐛 Bug Fix
+
+- Central Portal Migration [#5](https://github.com/sugarmanz/package-json/pull/5) ([@sugarmanz](https://github.com/sugarmanz))
+
+#### Authors: 1
+
+- Jeremiah Zucker ([@sugarmanz](https://github.com/sugarmanz))
+
+---
+
 # v0.0.2 (Sat Mar 05 2022)
 
 ### Release Notes
