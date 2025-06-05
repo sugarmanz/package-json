@@ -27,6 +27,15 @@ internal class PackageJsonTest {
         assertEquals(License.StringBased("ISC"), basicPackageJson.license)
         assertEquals(Bugs("https://github.com/sugarmanz/package-json/issues"), basicPackageJson.bugs)
         assertEquals("https://github.com/sugarmanz/package-json#readme", basicPackageJson.homepage)
+        assertEquals(
+            Dependencies(
+                listOf(
+                    Dependency(Name("auto"), Semver("10.34.1")),
+                    Dependency(Name("@auto-it/gradle"), Semver("10.34.1")),
+                )
+            ),
+            basicPackageJson.dependencies
+        )
 
         assertEquals(Json.decodeFromString(basicPackageJsonString), Json.encodeToJsonElement(basicPackageJson))
     }

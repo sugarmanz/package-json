@@ -6,6 +6,10 @@
   "scripts": {
     "test": "test"
   },
+  "dependencies": {
+    "auto": "10.34.1",
+    "@auto-it/gradle": "10.34.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sugarmanz/package-json.git"
